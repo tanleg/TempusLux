@@ -1,5 +1,5 @@
 Ce projet est réalisé dans le cadre d’un cours sur la prompt ingénierie, consacré à l’utilisation des IA génératives.
-L’objectif était de créer un site e-commerce dédié à la vente de montres haut de gamme, en seulement 3 heures, grâce à l’assistance de ces outils.
+L’objectif était de créer un site e-commerce dédié à la vente de montres haut de gamme, en moins de 3 heures, grâce à l’assistance de ces outils.
 Il est important de préciser que je n’ai écrit aucune ligne de code pour ce projet : chaque fonctionnalité, design, et composant du site (y compris le README) a été généré ou rédigé par une intelligence artificielle, démontrant la puissance et l’efficacité de ces technologies dans le développement web moderne.
 
 
