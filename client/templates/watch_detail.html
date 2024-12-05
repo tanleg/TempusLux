@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ watch['name'] }} - Détails</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>{{ watch['name'] }}</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ watch['image_url'] }}" class="img-fluid" alt="{{ watch['name'] }}">
+            </div>
+            <div class="col-md-6">
+                <p><strong>Marque :</strong> {{ watch['brand'] }}</p>
+                <p><strong>Catégorie :</strong> {{ watch['category'] }}</p>
+                <p><strong>Prix :</strong> {{ watch['price'] }}€</p>
+                <p><strong>Description :</strong> {{ watch['description'] }}</p>
+            </div>  
+        </div>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Retour à la Liste</a>
+    </div>
+</body>
+</html>

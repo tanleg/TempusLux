@@ -1,0 +1,182 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Noir profond */
+    color: #F8F8F8; /* Blanc cassé */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    color: #D4AF37; /* Doré */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #D4AF37; /* Doré */
+    border: 1px solid #D4AF37;
+    color: #121212; /* Noir profond */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #F8F8F8; /* Blanc cassé */
+    color: #121212; /* Noir profond */
+}
+
+.btn-secondary {
+    background-color: #2F2F2F; /* Gris anthracite */
+    border: 1px solid #2F2F2F;
+    color: #F8F8F8; /* Blanc cassé */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #121212; /* Noir profond */
+    color: #F8F8F8; /* Blanc cassé */
+}
+
+/* Page Liste des Montres */
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card {
+    background-color: #2F2F2F; /* Gris anthracite */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #D4AF37; /* Doré */
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #F8F8F8; /* Blanc cassé */
+    font-size: 1.1rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Page Détails de Montre */
+.container.mt-5 {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.col-md-6 {
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #F8F8F8; /* Blanc cassé */
+}
+
+strong {
+    color: #D4AF37; /* Doré */
+}
+
+.btn-secondary {
+    background-color: #2F2F2F; /* Gris anthracite */
+    border: 1px solid #2F2F2F;
+    color: #F8F8F8; /* Blanc cassé */
+    font-weight: bold;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #121212; /* Noir profond */
+    color: #F8F8F8; /* Blanc cassé */
+}
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-fluid {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container.mt-5 {
+        margin-top: 30px;
+    }
+
+    .watch-list-container .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempus Lux - Liste des Montres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Montres en Vente</h1>
+        <div class="row">
+            {% for watch in watches %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ watch['image_url'] }}" class="card-img-top" alt="{{ watch['name'] }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ watch['name'] }}</h5>
+                        <p class="card-text">Prix : {{ watch['price'] }}€</p>
+                        <a href="{{ url_for('watch_detail', watch_id=watch['id']) }}" class="btn btn-primary">Voir Détails</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
