@@ -1,1 +1,6 @@
 venv/
+
+# fly.io
+Dockerfile
+.dockerignore
+fly.toml
